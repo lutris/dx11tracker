@@ -1,0 +1,2 @@
+class Dll < ApplicationRecord
+end

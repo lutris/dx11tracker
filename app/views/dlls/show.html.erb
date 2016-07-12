@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dll.name %>
+</p>
+
+<p>
+  <strong>Spec path:</strong>
+  <%= @dll.spec_path %>
+</p>
+
+<%= link_to 'Edit', edit_dll_path(@dll) %> |
+<%= link_to 'Back', dlls_path %>

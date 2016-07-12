@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dlls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Spec path</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dlls.each do |dll| %>
+      <tr>
+        <td><%= dll.name %></td>
+        <td><%= dll.spec_path %></td>
+        <td><%= link_to 'Show', dll %></td>
+        <td><%= link_to 'Edit', edit_dll_path(dll) %></td>
+        <td><%= link_to 'Destroy', dll, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dll', new_dll_path %>
