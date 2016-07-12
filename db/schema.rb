@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160711214157) do
+ActiveRecord::Schema.define(version: 20160712093525) do
+
+  create_table "dlls", force: :cascade do |t|
+    t.string   "name"
+    t.string   "spec_path"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "releases", force: :cascade do |t|
     t.string   "name"
